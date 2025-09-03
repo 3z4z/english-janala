@@ -8,11 +8,8 @@
     <!-- tailwindCSS + DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
-        integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- lucide Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/lucide-static@latest/font/lucide.css" rel="stylesheet">
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <!-- stylesheet -->
@@ -20,8 +17,96 @@
 </head>
 
 <body>
-    <h1 class="text-5xl text-cyan-800 mb-1 font-bold">Hello World</h1>
-    <h2 class="font-bn text-2xl text-slate-900 font-medium">ওহে বিশ্ব</h2>
+    <header>
+        <nav class="bg-[#BADEFF]/25 shadow-sm">
+            <div class="navbar max-w-[1400px] mx-auto">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li>
+                                <a href="#">
+                                    <i class="text-lg leading-4 icon-circle-question-mark"></i>
+                                    <span class="font-semibold text-sm">FAQ</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="text-lg leading-4 icon-book-open"></i>
+                                    <span class="font-semibold text-sm">Learn</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="text-lg leading-4 icon-log-out"></i>
+                                    <span class="font-semibold text-sm">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="text-xl flex items-center">
+                        <span class="font-semibold ">English</span>
+                        <figure class="mx-1">
+                            <img src="assets/logo.png" alt="">
+                        </figure>
+                        <span class="font-bn font-semibold">জানালা</span>
+                    </a>
+                </div>
+                <div class="navbar-end hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 gap-x-4">
+                        <li>
+                            <a href="#" class="btn btn-primary btn-outline">
+                                <i class="text-lg leading-4 icon-circle-question-mark"></i>
+                                <span class="font-semibold text-sm">FAQ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-primary btn-outline">
+                                <i class="text-lg leading-4 icon-book-open"></i>
+                                <span class="font-semibold text-sm">Learn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-primary btn-outline">
+                                <i class="text-lg leading-4 icon-log-out"></i>
+                                <span class="font-semibold text-sm">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- banner section -->
+        <section class="max-w-[1400px] mx-auto lg:px-3 px-6 lg:py-16 pb-20">
+            <div class="flex items-center lg:gap-48 gap-12 lg:flex-row flex-col">
+                <div class="flex-1 lg:order-1 order-2">
+                    <h1 class="text-5xl font-extrabold text-gray-800">
+                        <span class="text-primary me-1">English</span>
+                        is Easy
+                    </h1>
+                    <h2 class="font-bn font-medium text-gray-600 my-6 text-xl">
+                        আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান,
+                        আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ
+                    </h2>
+                    <form action="#" class="flex flex-col gap-3">
+                        <input type="text" placeholder="Enter Your Name" class="input" />
+                        <input type="password" placeholder="********" class="input" />
+                        <button class="btn btn-primary w-max">Get Started</button>
+                    </form>
+                </div>
+                <figure class="flex-1 order-1 lg:order-2">
+                    <img src="assets/hero-student.png" alt="" class="w-full">
+                </figure>
+            </div>
+        </section>
+    </header>
     <script src="scripts/main.js"></script>
 </body>
 
