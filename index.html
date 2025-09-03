@@ -19,33 +19,30 @@
 <body>
     <header>
         <nav class="bg-[#BADEFF]/25 shadow-sm">
-            <div class="navbar max-w-[1400px] mx-auto">
+            <div class="navbar max-w-[1400px] mx-auto px-3">
                 <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
+                    <div class="dropdown me-3">
+                        <div tabindex="0" role="button"
+                            class="btn btn-ghost hover:bg-transparent active:bg-transparent border-0 lg:hidden px-0 text-xl">
+                            <i class="icon-menu"></i>
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                             <li>
                                 <a href="#">
-                                    <i class="text-lg leading-4 icon-circle-question-mark"></i>
+                                    <i class="icon-circle-question-mark"></i>
                                     <span class="font-semibold text-sm">FAQ</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="text-lg leading-4 icon-book-open"></i>
+                                    <i class="icon-book-open"></i>
                                     <span class="font-semibold text-sm">Learn</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="text-lg leading-4 icon-log-out"></i>
+                                    <i class="icon-log-out"></i>
                                     <span class="font-semibold text-sm">Logout</span>
                                 </a>
                             </li>
@@ -63,19 +60,19 @@
                     <ul class="menu menu-horizontal px-1 gap-x-4">
                         <li>
                             <a href="#" class="btn btn-primary btn-outline">
-                                <i class="text-lg leading-4 icon-circle-question-mark"></i>
+                                <i class="icon-circle-question-mark"></i>
                                 <span class="font-semibold text-sm">FAQ</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="btn btn-primary btn-outline">
-                                <i class="text-lg leading-4 icon-book-open"></i>
+                                <i class="icon-book-open"></i>
                                 <span class="font-semibold text-sm">Learn</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="btn btn-primary btn-outline">
-                                <i class="text-lg leading-4 icon-log-out"></i>
+                                <i class="icon-log-out"></i>
                                 <span class="font-semibold text-sm">Logout</span>
                             </a>
                         </li>
@@ -84,10 +81,10 @@
             </div>
         </nav>
         <!-- banner section -->
-        <section class="max-w-[1400px] mx-auto lg:px-3 px-6 lg:py-16 pb-20">
+        <section class="max-w-[1400px] mx-auto px-3 lg:pt-16 lg:pb-40 pb-24">
             <div class="flex items-center lg:gap-48 gap-12 lg:flex-row flex-col">
                 <div class="flex-1 lg:order-1 order-2">
-                    <h1 class="text-5xl font-extrabold text-gray-800">
+                    <h1 class="lg:text-6xl text-5xl font-extrabold text-gray-800">
                         <span class="text-primary me-1">English</span>
                         is Easy
                     </h1>
@@ -107,6 +104,22 @@
             </div>
         </section>
     </header>
+    <main class="max-w-[1400px] mx-auto px-3">
+        <!-- lessons tabs section -->
+        <section>
+            <h3 class="lg:text-4xl text-3xl font-extrabold text-gray-800 text-center">
+                <span class="text-primary me-1">Let's </span>
+                Learn Vocabularies
+            </h3>
+            <div id="level-navs" class="flex justify-center gap-3 flex-wrap mt-9 mb-10"></div>
+            <div id="level-tabs" class="bg-slate-100 rounded-lg lg:p-6 p-3 grid lg:grid-cols-3 sm:grid-cols-2 gap-6">
+                <div class="lg:py-11 py-4 text-center font-medium col-span-full">
+                    <p class="font-bn text-sm">আপনি এখনো কোন Lesson Select করেন নি</p>
+                    <p class="font-bn lg:text-4xl text-3xl mt-3">একটি Lesson Select করুন।</p>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="scripts/main.js"></script>
 </body>
 

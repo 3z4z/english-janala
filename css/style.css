@@ -7,3 +7,7 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+
+main > section {
+  padding-bottom: 5rem;
+}
