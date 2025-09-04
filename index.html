@@ -18,6 +18,7 @@
 
 <body>
     <header>
+        <!-- navbar section -->
         <nav class="bg-[#BADEFF]/25 shadow-sm">
             <div class="navbar max-w-[1400px] mx-auto px-3">
                 <div class="navbar-start">
@@ -29,13 +30,13 @@
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                             <li>
-                                <a href="#">
+                                <a href="#faq-container">
                                     <i class="icon-circle-question-mark"></i>
                                     <span class="font-semibold text-sm">FAQ</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#level-tabs">
                                     <i class="icon-book-open"></i>
                                     <span class="font-semibold text-sm">Learn</span>
                                 </a>
@@ -59,13 +60,13 @@
                 <div class="navbar-end hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 gap-x-4">
                         <li>
-                            <a href="#" class="btn btn-primary btn-outline">
+                            <a href="#faq-container" class="btn btn-primary btn-outline">
                                 <i class="icon-circle-question-mark"></i>
                                 <span class="font-semibold text-sm">FAQ</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="btn btn-primary btn-outline">
+                            <a href="#level-tabs" class="btn btn-primary btn-outline">
                                 <i class="icon-book-open"></i>
                                 <span class="font-semibold text-sm">Learn</span>
                             </a>
@@ -112,6 +113,15 @@
                 Learn Vocabularies
             </h3>
             <div id="level-navs" class="flex justify-center gap-3 flex-wrap mt-9 mb-10"></div>
+            <h4 class="text-center mb-3 font-medium font-bn">যেকোনো শব্দ খুঁজুন</h4>
+            <div class="mb-10 join flex max-w-sm mx-auto">
+                <input id="search-input"
+                    class="input border-[#422ad522] join-item py-5 px-6 focus:outline-0 focus:shadow-none focus:border-[#422ad5] w-full"
+                    placeholder="Search by word" />
+                <button id="search-btn"
+                    class="btn btn-soft btn-primary border-primary/10 join-item py-5 px-8">Search</button>
+
+            </div>
             <div id="level-tabs" class="bg-slate-100 rounded-lg lg:p-6 p-3 grid lg:grid-cols-3 sm:grid-cols-2 gap-6">
                 <div class="lg:py-11 py-4 text-center font-medium col-span-full">
                     <p class="font-bn text-sm">আপনি এখনো কোন Lesson Select করেন নি</p>
@@ -122,8 +132,44 @@
                 <span class="loader"></span>
             </div>
         </section>
+        <!-- faq section -->
+        <section>
+            <h3 class="lg:text-4xl text-3xl font-extrabold text-gray-800 text-center">
+                <span class="text-primary me-1">Frequently</span>
+                Asked Questions
+            </h3>
+            <div id="faq-container" class=" mt-9"></div>
+        </section>
         <dialog id="word_modal" class="modal modal-bottom sm:modal-middle"></dialog>
     </main>
+    <!-- footer section -->
+    <footer class="border-t border-primary/10 py-24 px-3 flex sm:flex-row flex-col gap-10 items-end justify-between">
+        <div>
+            <div class="text-xl flex items-center">
+                <span class="font-semibold ">English</span>
+                <figure class="mx-1">
+                    <img src="assets/logo.png" alt="">
+                </figure>
+                <span class="font-bn font-semibold">জানালা</span>
+            </div>
+            <h3 class="font-bn font-semibold text-2xl mt-6 mb-1">ইংরেজি শিখুন সহজে</h3>
+            <p>Provided by Md. Salman Ezaz</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <h5 class="font-medium mb-4">Stay with us</h5>
+            <ul class="flex items-center gap-3">
+                <li><a href="#"
+                        class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-200 hover:text-white hover:bg-primary transition-all">
+                        <i class="icon-instagram"></i></a></li>
+                <li><a href="#"
+                        class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-200 hover:text-white hover:bg-primary transition-all">
+                        <i class="icon-facebook"></i></a></li>
+                <li><a href="#"
+                        class="w-10 h-10 rounded-full flex items-center justify-center border border-gray-200 hover:text-white hover:bg-primary transition-all">
+                        <i class="icon-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </footer>
     <script src="scripts/main.js"></script>
 </body>
 
