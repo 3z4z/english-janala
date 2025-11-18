@@ -17,6 +17,7 @@ The goal is to make learning English easy, fun, and accessible for everyone.
 
 - **HTML5**
 - **CSS3**
+- **JavaScript**
 - **TailwindCSS**
 - **DaisyUI**
 - **Netlify** (for deployment)
@@ -25,5 +26,9 @@ The goal is to make learning English easy, fun, and accessible for everyone.
 
 See live site from here: [English Janala](https://en-janala.netlify.app/)
 
+## Setup
 
-
+```
+git clone https://github.com/3z4z/english-janala.git
+cd english-janala
+```
